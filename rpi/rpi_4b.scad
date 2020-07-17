@@ -102,11 +102,14 @@ rpi4b_poe_position = [
 // X distance that the Ethernet and USB ports extend past the PCB edge
 rpi4b_ethernet_usb_pcb_overhang = 3;
 
+// Dimensions of the USB ports
+rpi4b_usb_dimensions = [17.5, 14.5, 16];
+
 // Location of the bottom left corners of the USB ports
 rpi4b_usb_positions = [
     for(y = [9, 27]) [
-        rpib_pcb_dimensions.x + rpi4b_ethernet_usb_pcb_overhang - rpib_usb_dimensions.x,
-        y - rpib_usb_dimensions.y / 2,
+        rpib_pcb_dimensions.x + rpi4b_ethernet_usb_pcb_overhang - rpi4b_usb_dimensions.x,
+        y - rpi4b_usb_dimensions.y / 2,
         rpib_pcb_dimensions.z
     ]
 ];
@@ -133,8 +136,8 @@ module Raspberry_Pi_4B() {
         [rpi4b_audio_position, rpi4b_audio_dimenions, "DimGray"],
         [rpi4b_poe_position, rpi4b_poe_dimensions, "Silver"],
         [rpi4b_ethernet_position, rpib_ethernet_dimensions, "Silver"],
-        [rpi4b_usb_positions[0], rpib_usb_dimensions, "Silver"],
-        [rpi4b_usb_positions[1], rpib_usb_dimensions, "Silver"],
+        [rpi4b_usb_positions[0], rpi4b_usb_dimensions, "Silver"],
+        [rpi4b_usb_positions[1], rpi4b_usb_dimensions, "Silver"],
     ];
 
     _Raspberry_Pi_B(components);

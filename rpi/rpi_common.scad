@@ -71,9 +71,6 @@ rpib_gpio_position = [
 // Dimensions of the Micro SD card slot
 rpib_usd_dimensions = [11.5, 12, 1.5];
 
-// Dimensions of the USB ports
-rpib_usb_dimensions = [17.25, 15, 16];
-
 // Dimensions of the Ethernet port
 rpib_ethernet_dimensions = [21.2, 16, 13.5];
 
