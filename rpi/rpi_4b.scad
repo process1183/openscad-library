@@ -79,10 +79,10 @@ rpi4b_audio_position = [
     rpib_pcb_dimensions.z
 ];
 
-// Location of the bottom left corner of the SoC
+// Dimensions of the SoC
 rpi4b_soc_dimensions = [15, 15, 2.4];
 
-// Location of the bottom left of the SoC
+// Location of the bottom left corner of the SoC
 rpi4b_soc_position = [
     rpi_screw_hole_edge_distance + 25.75 - rpi4b_soc_dimensions.x / 2,
     32.5 - rpi4b_soc_dimensions.y / 2,
