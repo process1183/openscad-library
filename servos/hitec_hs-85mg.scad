@@ -37,8 +37,11 @@ hs85mg_flange_location_z = 18.5;
 // Distance between wire and mounting flange
 hs85mg_flange_wire_space = 13.5;
 
-// Mounting flange thickness
-hs85mg_flange_height_z = 2;
+hs85mg_flange_dimensions = [
+    (hs85mg_main_body_with_flanges.x - hs85mg_main_body.x) / 2,
+    12,
+    2
+];
 
 hs85mg_flange_screw_hole_diameter = 4.5;
 
