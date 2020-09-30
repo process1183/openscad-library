@@ -70,7 +70,7 @@ rpi4b_camera_port_position = [
 ];
 
 // Dimensions of the audio / composite video port
-rpi4b_audio_dimenions = [7, 14.9, 6];
+rpi4b_audio_dimensions = [7, 14.9, 6];
 
 // Location of the bottom left corner of the audio / composite video port
 rpi4b_audio_position = [
