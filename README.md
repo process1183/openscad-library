@@ -105,7 +105,7 @@ Usage:
 
 ## Servos ##
 
-| file | description |
+| File | Description |
 | :--- | :---------- |
 | [servos/hitec_hs-85mg.scad](servos/hitec_hs-85mg.scad) | Hitec HS-85MG micro servo dimensions |
 
@@ -142,7 +142,7 @@ Usage:
 
 ## Miscellaneous ##
 
-| file | description |
+| File | Description |
 | :--- | :---------- |
 | [cherry_mx_switch_plate.scad](cherry_mx_switch_plate.scad) | Cherry MX mechanical key switch mounting plate |
 
