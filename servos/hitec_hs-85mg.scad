@@ -20,7 +20,7 @@
  */
 
 hs85mg_main_body = [
-    29.1,
+    29,
     13,
     29.9
 ];
@@ -32,7 +32,7 @@ hs85mg_main_body_with_flanges = [
 ];
 
 // Bottom of servo to mounting flanges
-hs85mg_flange_location_z = 18.5;
+hs85mg_flange_location_z = 19.1;
 
 // Distance between wire and mounting flange
 hs85mg_flange_wire_space = 13.5;
@@ -61,14 +61,14 @@ hs85mg_output_shaft_location = [
     hs85mg_main_body.z
 ];
 
-hs85mg_output_shaft_diameter = 0;
+hs85mg_output_shaft_diameter = 5.7;
 hs85mg_output_shaft_height = 3.7;
 
 // Double Arm Horn (dah) dimensions
-hs85mg_dah_length = 29;
+hs85mg_dah_length = 29.1;
 hs85mg_dah_thickness = 1.6;
 hs85mg_dah_center_width = 8;
-hs85mg_dah_end_width = 4;
+hs85mg_dah_end_width = 4.1;
 hs85mg_dah_screw_shroud_diameter = 7;
 hs85mg_dah_screw_shroud_height = 0.8;
 
@@ -80,4 +80,4 @@ hs85mg_dah_screw_hole_diameter = 1.15;
 hs85mg_dah_screw_hole_distances = [7.575, 10.075, 12.575];
 
 // Distance from bottom of servo (Z = 0) to center of double arm horn
-hs85mg_dah_installed_z_center = 34.2;
+hs85mg_dah_installed_z_center = 34.3;
