@@ -139,6 +139,12 @@ Usage:
 | `hs85mg_output_shaft_height` | `Number` | Z height of the output shaft |
 | `hs85mg_output_shaft_location` | `Vector` | Output shaft location does *not* include mounting flanges. Location is the center of the bottom of the output shaft |
 
+#### Modules ####
+
+| Module | Description |
+| :----- | :---------- |
+| `HS85MGFlangeSpacer(inner_diameter, od_allowance)` | Toroidal spacer for the flange screw holes. `inner_diameter` (`Number`): Diameter of the spacer hole. Default is `2.45`mm. `od_allowance` (`Number`): Outer diameter mechanical allowance between spacer and flange. Default is `0.05`mm. |
+
 
 ## Miscellaneous ##
 

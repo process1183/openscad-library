@@ -81,3 +81,15 @@ hs85mg_dah_screw_hole_distances = [7.575, 10.075, 12.575];
 
 // Distance from bottom of servo (Z = 0) to center of double arm horn
 hs85mg_dah_installed_z_center = 34.3;
+
+
+
+// Toroidal spacer for the flange screw holes
+// inner_diameter (Number): Diameter of the spacer hole. Default is 2.45mm
+// od_allowance (Number): Outer diameter mechanical allowance between spacer and flange. Default is 0.05mm
+module HS85MGFlangeSpacer(inner_diameter = 2.45, od_allowance = 0.05) {
+    difference() {
+        cylinder(h = hs85mg_flange_dimensions.z, d = hs85mg_flange_screw_hole_diameter - od_allowance, $fn = 60);
+        cylinder(h = hs85mg_flange_dimensions.z, d = inner_diameter, $fn = 60);
+    }
+}
