@@ -151,6 +151,7 @@ Usage:
 | File | Description |
 | :--- | :---------- |
 | [cherry_mx_switch_plate.scad](cherry_mx_switch_plate.scad) | Cherry MX mechanical key switch mounting plate |
+| [utilities.scad](utilities.scad) | Miscellaneous useful modules. |
 
 ### `cherry_mx_switch_plate.scad` ###
 
@@ -173,3 +174,18 @@ Usage:
 | Module | Description |
 | :----- | :---------- |
 | `CherryMXSwitchPlate()` | 3D model of the Cherry MX switch plate using the above variables |
+
+### `utilities.scad` ###
+
+Usage:
+
+```openscad
+include <openscad-library/utilities.scad>;
+```
+
+#### Modules ####
+
+| Module | Description |
+| :----- | :---------- |
+| `tube(height, outer_diameter, inner_diameter, fn = 60)` | Convenience module for creating tubes. |
+| `PseudoObliqueCone(height, base_diameter, top_translate, fn = 60)` | Create an oblique cone. |
