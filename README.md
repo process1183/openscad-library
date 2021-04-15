@@ -19,7 +19,9 @@ Raspberry Pi PCBs.
 
 Usage:
 
-    include <openscad-library/rpi/rpi_common.scad>;
+```openscad
+include <openscad-library/rpi/rpi_common.scad>;
+```
 
 #### Variables ####
 
@@ -41,7 +43,9 @@ Usage:
 
 Usage:
 
-    include <openscad-library/rpi/rpi_4b.scad>;
+```openscad
+include <openscad-library/rpi/rpi_4b.scad>;
+```
 
 #### Variables ####
 
@@ -80,7 +84,9 @@ Usage:
 
 Usage:
 
-    include <openscad-library/rpi/rpi_camera_hdmi_extension.scad>;
+```openscad
+include <openscad-library/rpi/rpi_camera_hdmi_extension.scad>;
+```
 
 #### Variables ####
 
@@ -113,7 +119,9 @@ Usage:
 
 Usage:
 
-    include <openscad-library/servos/hitec_hs-85mg.scad>;
+```openscad
+include <openscad-library/servos/hitec_hs-85mg.scad>;
+```
 
 #### Variables ####
 
@@ -157,7 +165,9 @@ Usage:
 
 Usage:
 
-    include <openscad-library/cherry_mx_switch_plate.scad>;
+```openscad
+include <openscad-library/cherry_mx_switch_plate.scad>;
+```
 
 #### Variables ####
 
