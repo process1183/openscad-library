@@ -159,6 +159,7 @@ include <openscad-library/servos/hitec_hs-85mg.scad>;
 | File | Description |
 | :--- | :---------- |
 | [cherry_mx_switch_plate.scad](cherry_mx_switch_plate.scad) | Cherry MX mechanical key switch mounting plate |
+| [fasteners.scad](fasteners.scad) | Mechanical parameters for various nuts, bolts, etc |
 | [utilities.scad](utilities.scad) | Miscellaneous useful modules. |
 
 ### `cherry_mx_switch_plate.scad` ###
@@ -184,6 +185,38 @@ include <openscad-library/cherry_mx_switch_plate.scad>;
 | Module | Description |
 | :----- | :---------- |
 | `CherryMXSwitchPlate()` | 3D model of the Cherry MX switch plate using the above variables |
+
+
+### `fasteners.scad` ###
+
+Usage:
+
+```openscad
+include <openscad-library/fasteners.scad>;
+```
+
+#### Variables ####
+
+| Variable | Type | Description |
+| :------- | :--- | :---------- |
+| `threaded_insert_256_id` | `Number` | Inner diameter for a #2-56 threaded heat set insert tube |
+| `threaded_insert_256_od` | `Number` | Outer diameter for a #2-56 threaded heat set insert tube |
+| `threaded_insert_256_short_h` | `Number` | Height for a short (3mm) #2-56 threaded heat set insert tube |
+| `threaded_insert_256_long_h` | `Number` | Height for a long (5mm) #2-56 threaded heat set insert tube |
+| `screw_256_hole_diameter` | `Number` | Unthreaded hole diameter for #2-56 screws |
+| `nut_256_slot_diameter` | `Number` | Diameter for a #2-56 nut slot. Note: this is meant to be used in a six-sided cylinder, e.g. `cylinder(d = nut_256_slot_diameter, h = nut_256_slot_height, $fn = 6)` |
+| `nut_256_slot_height` | `Number` | Height for a #2-56 nut slot |
+| `screw_440_hole_diameter` | `Number` | Unthreaded hole diameter for #4-40 screws |
+| `nut_440_slot_diameter` | `Number` | Diameter for a #4-40 nut slot. Note: this is meant to be used in a six-sided cylinder, e.g. `cylinder(d = nut_440_slot_diameter, h = nut_440_slot_height, $fn = 6)` |
+| `nut_440_slot_height` | `Number` | Height for a #4-40 nut slot |
+
+#### Modules ####
+
+| Module | Description |
+| :----- | :---------- |
+| `threaded_insert_256_short()` | Convenience module to create a tube for a short (Z=3mm) #2-56 threaded heat set insert. The inner diameter is `threaded_insert_256_id`, and the outer diameter is `threaded_insert_256_od`|
+| `threaded_insert_256_long()` | Convenience module to create a tube for a long (Z=5mm) #2-56 threaded heat set insert. The inner diameter is `threaded_insert_256_id`, and the outer diameter is `threaded_insert_256_od` |
+
 
 ### `utilities.scad` ###
 
