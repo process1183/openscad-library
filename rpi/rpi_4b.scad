@@ -74,7 +74,7 @@ rpi4b_audio_dimensions = [7, 14.9, 6];
 
 // Location of the bottom left corner of the audio / composite video port
 rpi4b_audio_position = [
-    rpi4b_camera_port_position.x + rpi4b_camera_port_dimensions.x / 2 + 7.5 - rpi4b_audio_dimenions.x / 2,
+    rpi4b_camera_port_position.x + rpi4b_camera_port_dimensions.x / 2 + 7.5 - rpi4b_audio_dimensions.x / 2,
     -2.5,
     rpib_pcb_dimensions.z
 ];
@@ -133,7 +133,7 @@ module Raspberry_Pi_4B() {
         [rpi4b_uhdmi_positions[0], rpi4b_uhdmi_dimensions, "Silver"],
         [rpi4b_uhdmi_positions[1], rpi4b_uhdmi_dimensions, "Silver"],
         [rpi4b_camera_port_position, rpi4b_camera_port_dimensions, "Snow"],
-        [rpi4b_audio_position, rpi4b_audio_dimenions, "DimGray"],
+        [rpi4b_audio_position, rpi4b_audio_dimensions, "DimGray"],
         [rpi4b_poe_position, rpi4b_poe_dimensions, "Silver"],
         [rpi4b_ethernet_position, rpib_ethernet_dimensions, "Silver"],
         [rpi4b_usb_positions[0], rpi4b_usb_dimensions, "Silver"],
